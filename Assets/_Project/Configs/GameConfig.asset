@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90c201a142fc854aaf3ce7e0d745ca9, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _enemyGroups:
+  - _enemiesCount: 20
+    _enemyConfig:
+      _enemyType: 0
+      _enemyPrefab: {fileID: 3155228859557107421, guid: f54160ff62aeea74b84918d6c5d6bb00, type: 3}
+      _enemySpeed: 0.1
+  - _enemiesCount: 30
+    _enemyConfig:
+      _enemyType: 1
+      _enemyPrefab: {fileID: 4567045658837747108, guid: cca170dbdb8bfb749b93b19dbdeb3e13, type: 3}
+      _enemySpeed: 0.1
+  - _enemiesCount: 2
+    _enemyConfig:
+      _enemyType: 0
+      _enemyPrefab: {fileID: 4567045658837747108, guid: cca170dbdb8bfb749b93b19dbdeb3e13, type: 3}
+      _enemySpeed: 0.5
+  _quests:
+  - rid: 8834173819417264131
+  - rid: 8834173819417264132
+  - rid: 8834173819417264133
+  - rid: 8834173819417264134
+  - rid: 8834173819417264135
+  references:
+    version: 2
+    RefIds:
+    - rid: 8834173819417264131
+      type: {class: KillEnemiesQuest, ns: _Project.Develop.Runtime.Data.Configs, asm: Project.Data}
+      data:
+        count: 10
+    - rid: 8834173819417264132
+      type: {class: PlayTimeQuest, ns: _Project.Develop.Runtime.Data.Configs, asm: Project.Data}
+      data:
+        timeSeconds: 120
+    - rid: 8834173819417264133
+      type: {class: KillEnemiesOfTypeQuest, ns: _Project.Develop.Runtime.Data.Configs, asm: Project.Data}
+      data:
+        enemyType: 0
+        count: 10
+    - rid: 8834173819417264134
+      type: {class: PlayTimeQuest, ns: _Project.Develop.Runtime.Data.Configs, asm: Project.Data}
+      data:
+        timeSeconds: 10
+    - rid: 8834173819417264135
+      type: {class: KillEnemiesOfTypeQuest, ns: _Project.Develop.Runtime.Data.Configs, asm: Project.Data}
+      data:
+        enemyType: 1
+        count: 5
